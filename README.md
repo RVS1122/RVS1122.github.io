@@ -9,7 +9,7 @@ Welcome to my GitHub portfolio! I'm an ethical hacker and cybersecurity enthusia
 🔒 **Name:** [Rahul VS]  
 🌐 **Website/Blog:** [YourWebsite.com](https://YourWebsite.com)  
 📧 **Email:** [vsrahul163@gmail.com](mailto:vsrahul163@gmail.com.com)  
-💼 **LinkedIn:** [linkedin.com/in/YourProfile](https://www.linkedin.com/in/rahul-v-s-2443ab292)  
+💼 **LinkedIn:** [https://www.linkedin.com/in/rahul-v-s-2443ab292](https://www.linkedin.com/in/rahul-v-s-2443ab292)  
 🐦 **Twitter:** [@YourHandle](https://twitter.com/YourHandle)
 
 As an ethical hacker, I strive to improve cybersecurity by identifying vulnerabilities before malicious actors exploit them. My expertise lies in penetration testing, secure code review, network analysis, and incident response.
