@@ -51,7 +51,7 @@
         h2 {
             color: #00796b;
         }
-        .project, .certification {
+        .project, .certification, .blog-post {
             background-color: #f9f9f9;
             padding: 15px;
             margin: 20px 0;
@@ -89,6 +89,7 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#certifications">Certifications</a>
+        <a href="#blog">Blog</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -99,43 +100,31 @@
 
     <section id="projects">
         <h2>Projects</h2>
-
         <div class="project">
-            <img src="web-app-assessment.jpg" alt="Web Application Security Assessment">
             <h3>Web Application Security Assessment</h3>
             <p>Performed a comprehensive security assessment of a financial web application, identifying critical vulnerabilities such as SQL injection and cross-site scripting (XSS). Delivered actionable recommendations to mitigate risks.</p>
         </div>
-
         <div class="project">
-            <img src="network-penetration-test.jpg" alt="Network Penetration Test">
             <h3>Network Penetration Test</h3>
             <p>Executed a network penetration test for a mid-sized company, uncovering misconfigurations and weaknesses in firewalls and wireless networks. Enhanced the overall security posture by implementing secure configurations.</p>
-        </div>
-
-        <div class="project">
-            <img src="mobile-security-review.jpg" alt="Mobile Application Security Review">
-            <h3>Mobile Application Security Review</h3>
-            <p>Conducted a security review of a mobile banking app, identifying insecure API calls and weak encryption practices. Collaborated with developers to fix issues and ensure compliance with industry standards.</p>
         </div>
     </section>
 
     <section id="certifications">
         <h2>Certifications</h2>
-
         <div class="certification">
             <h3>Certified Ethical Hacker (CEH)</h3>
             <p>Recognized for expertise in ethical hacking methodologies and tools to identify and mitigate cybersecurity threats.</p>
         </div>
-
         <div class="certification">
             <h3>CompTIA Security+</h3>
             <p>Validated foundational skills in network security, cryptography, and system security practices.</p>
         </div>
+    </section>
 
-        <div class="certification">
-            <h3>Offensive Security Certified Professional (OSCP)</h3>
-            <p>Demonstrated advanced penetration testing skills through hands-on, real-world scenarios.</p>
-        </div>
+    <section id="blog">
+        <h2>Blog</h2>
+        <div id="blog-container"></div>
     </section>
 
     <section id="contact" class="contact">
@@ -148,6 +137,36 @@
     <footer>
         <p>&copy; 2024 V S Rahul. All Rights Reserved.</p>
     </footer>
+
+    <script>
+        const blogs = [
+            {
+                title: "Top 10 Tools for Ethical Hacking",
+                date: "December 1, 2024",
+                summary: "A detailed guide on the top tools for penetration testers.",
+                link: "#"
+            },
+            {
+                title: "How to Perform Secure Code Reviews",
+                date: "November 15, 2024",
+                summary: "Best practices and techniques for secure code analysis.",
+                link: "#"
+            }
+        ];
+
+        const blogContainer = document.getElementById('blog-container');
+        blogs.forEach(blog => {
+            const blogPost = document.createElement('div');
+            blogPost.className = 'blog-post';
+            blogPost.innerHTML = `
+                <h3>${blog.title}</h3>
+                <p><strong>Date:</strong> ${blog.date}</p>
+                <p>${blog.summary}</p>
+                <a href="${blog.link}" target="_blank">Read more</a>
+            `;
+            blogContainer.appendChild(blogPost);
+        });
+    </script>
 </body>
 </html>
 
